@@ -520,7 +520,8 @@ cpufreq_dt_attach(device_t dev)
 			continue;
 		if (cpu == sc->cpu) {
 			DPRINTF(dev, "Skipping our cpu\n");
-			CPU_SET(cpu++, &sc->cpus);
+			CPU_SET(cpu, &sc->cpus);
+			cpu++;
 			continue;
 		}
 		DPRINTF(dev, "Testing CPU %d\n", cpu);
