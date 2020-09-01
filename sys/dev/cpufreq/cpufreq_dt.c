@@ -254,7 +254,6 @@ cpufreq_dt_set(device_t dev, const struct cf_setting *set)
 	return (0);
 }
 
-
 static int
 cpufreq_dt_type(device_t dev, int *type)
 {
@@ -547,7 +546,6 @@ cpufreq_dt_attach(device_t dev)
 
 	return (0);
 }
-
 
 static device_method_t cpufreq_dt_methods[] = {
 	/* Device interface */
